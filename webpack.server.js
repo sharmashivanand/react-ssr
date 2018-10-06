@@ -1,5 +1,5 @@
 const path = require('path');
-//const webpackNodeExternals = require('webpack-node-externals');
+const webpackNodeExternals = require('webpack-node-externals');
 
 module.exports = {
     // Tell webpack to run babel on every file it runs through
@@ -27,5 +27,6 @@ module.exports = {
             }
         ]
     },
-    mode: 'development'
+    mode: 'development',
+    externals: [webpackNodeExternals()]
 };
