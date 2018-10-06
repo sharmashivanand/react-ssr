@@ -5,9 +5,9 @@ module.exports = {
     // Tell webpack to run babel on every file it runs through
 
     target: 'node',
-    entry: './src/index.js',
+    entry: './src/server.js',
     output: {
-        filename: 'bundle.js',
+        filename: 'server.js',
         path: path.resolve(__dirname, 'build')
         //path: '../../build'
     },
