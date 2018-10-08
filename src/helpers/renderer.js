@@ -4,10 +4,9 @@ import { StaticRouter } from 'react-router-dom';
 import Routes from '../client/Routes';
 
 
-export default () => {
-    
+export default (req) => {
     const content = renderToString(
-        <StaticRouter context={{}}>
+        <StaticRouter location={req.path} context={{}} >
             <Routes />
         </StaticRouter>
     );

@@ -6,7 +6,7 @@ export default () => {
     return (
         <div>
             <Route exact path='/' component={Home} />
-            <Route path='/hi' component={() => <div>'Hi'</div>} />
+            <Route path='/hi' component={() => <div>Hi</div>} />
         </div>
     );
 }
